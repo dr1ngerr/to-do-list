@@ -15,43 +15,50 @@
 </head>
 
 <body>
+    <!-- Main Container -->
     <div class="main-container">
+        <!-- Header -->
         <header>
             <h1>To-Do List</h1>
             <p class="subtitle">Mantente organizado y productivo</p>
         </header>
 
+        <!-- Main Content -->
         <main>
+            <!-- Task Section -->
             <section class="task-section">
-                <div>
+                <div class="task-input">
                     <input type="text" placeholder="Añade una tarea nueva...">
                     <button>+ Añadir tarea</button>
                 </div>
 
-                <div>
-                    <p>0</p>
-                    <p>Tareas totales</p>
+                <div class="task-stats">
+                    <div class="task-stats-item blue-background">
+                        <p class="item-number">0</p>
+                        <p class="item-text">Tareas totales</p>
+                    </div>
+
+                    <div class="task-stats-item green-background">
+                        <p class="item-number">0</p>
+                        <p class="item-text">Tareas completadas</p>
+                    </div>
+
+                    <div class="task-stats-item orange-background">
+                        <p class="item-number">0</p>
+                        <p class="item-text">Tareas pendientes</p>
+                    </div>
                 </div>
 
                 <div>
-                    <p>0</p>
-                    <p>Tareas completadas</p>
+                    <button class="btn">Todas</button>
+                    <button class="btn">Pendientes</button>
+                    <button class="btn">Completadas</button>
                 </div>
 
-                <div>
-                    <p>0</p>
-                    <p>Tareas pendientes</p>
-                </div>
-
-                <div>
-                    <button>Todas</button>
-                    <button>Pendientes</button>
-                    <button>Completadas</button>
-                </div>
 
                 <ul></ul>
 
-                <div>
+                <div class="no-tasks-container">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="icon icon-tabler icons-tabler-outline icon-tabler-checklist">
@@ -62,7 +69,7 @@
                         <path d="M9 12h2" />
                     </svg>
                     <h2>No hay tareas pendientes.</h2>
-                    <p>¡Crea tu primera tarea!</p>
+                    <p class="no-tasks-text">¡Crea tu primera tarea!</p>
                 </div>
             </section>
         </main>
